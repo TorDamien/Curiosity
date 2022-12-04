@@ -1,0 +1,38 @@
+Ajout makefile : 
+		-make cleanerr : supprime .o et .err
+		-make cleanperf : suppprime .o et .perf
+
+####################################
+
+Deux manières de lancer des tests via les executables curiosity obs/test/perf:
+	
+	-Classique en mettant les fichiers tests dans le dossier principal
+	-Par les scripts présents dans le dossier principal en mettant les fichiers tests :
+			- Dans le dossier fichier-tests-tp7 pour lancer avec curiosity-test
+			- Dans le dossier fichier-tests-tp8 pour lancer avec curiosity-perf
+			- Dans le dossier fichier-tests-tp9 pour lancer avec curiosity-obs
+
+Review des scripts:
+	
+	Pour lancer des tests isolés pour respectivement curiosity-test,perf et obs :
+	script-test.sh, script-perf.sh et script-obs.sh
+	Ces derniers ont un paramétrage par défault à changer par le nom de ses fichiers tests/programmes...
+
+	Pour lancer tous les tests crées au tp7 sur les 10 interpètes :
+	script-execall-tp7.sh
+
+	Pour lancer les 4 tests correct/incorrect accepté/nonaccepté :
+	script-obs-tp9.sh
+
+Il est possible aussi de conserver tous les résultats entre chaque appel de script en décochant une option dans ces derniers (indiqué dans les scripts).
+
+De plus, curiosity-test renvoie un fichier de sortie nommé "rapport_test.err".
+		 curiosity-perf renvoie trois fichiers nommés "Tout_les_terrains.perf", "Terrain_alea.perf" et "Rapport_performance.perf".
+		 curiosity-obs renvoie un fichier nommé "rapport_observateur.err".
+
+Dans le dossier principaux ou dans les dossiers fichiers-tests si la conservation des résultats à été activé.
+
+
+
+
+	
